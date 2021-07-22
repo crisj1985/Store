@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "API:API::API.Controllers.ProductsController::GetProducts (dotnetcore3.1)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/API",
+                "lambdaHandler": "API::API.Controllers.ProductsController::GetProducts"
+            },
+            "lambda": {
+                "runtime": "dotnetcore3.1",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        }
+    ]
+}
